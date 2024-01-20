@@ -35,7 +35,7 @@ function paintToDo(newTodo) {
   const span = document.createElement("span");
   span.innerText = newTodo.text; //object의 text
   const button = document.createElement("button");
-  button.innerText = "❌";
+  button.innerText = "done";
   button.addEventListener("click", deleteToDo);
   //li태그 안에 span태그가 오도록(span이라는 자식을 가짐)
   li.appendChild(span);

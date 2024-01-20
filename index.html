@@ -3,30 +3,52 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Momentum App</title>
-
     <link rel="stylesheet" href="./css/style.css" />
+    <title>Momentum App</title>
   </head>
+
   <body>
-    <form class="hidden" id="login-form">
+    <!-- 배경이미지 -->
+    <div id="bgImge"></div>
+
+    <!-- 로그인 하기전 멘트 -->
+    <div id="login-word" class="hidden">Hello, What's your name?</div>
+
+    <!-- 로그인 form -->
+    <form id="login-form" class="hidden">
       <input
+        id="name_input"
         required
-        maxlength="15"
+        maxlength="10"
         type="text"
-        placeholder="What is your name?"
+        placeholder="Type your name here"
       />
       <button>Log In</button>
     </form>
-    <h2 id="clock">00:00:00</h2>
-    <h1 class="hidden" id="greeting"></h1>
-    <form id="todo-form">
-      <input type="text" placeholder="Write a TO Do and Press Enter" required />
+
+    <!-- 시계, 인사 -->
+    <h2 id="clock" class="hidden">00:00:00</h2>
+    <h1 id="greeting" class="hidden"></h1>
+
+    <!-- 오늘 할 일 리스트 -->
+    <form id="todo-form" class="hidden">
+      <input
+        id="todo_input"
+        type="text"
+        placeholder="Write a To Do list here"
+        required
+      />
     </form>
-    <ul id="todo-list"></ul>
+
+    <ul id="todo-list" class="hidden"></ul>
+
+    <!-- 명언 -->
     <div id="quote">
       <span></span>
       <span></span>
     </div>
+
+    <!-- 날씨 -->
     <div id="weather">
       <span></span>
       <span></span>

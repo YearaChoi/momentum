@@ -116,6 +116,7 @@ input::placeholder {
 }
 
 #quote {
+  width: 2000px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -125,6 +126,7 @@ input::placeholder {
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 20px;
+  line-height: 30px;
 }
 
 #weather {

@@ -11,11 +11,11 @@ const images = [
   "10.jpeg",
 ];
 
-const chosenImage = images[Math.floor(Math.random() * quotes.length)];
+const chosenImage = images[Math.floor(Math.random() * images.length)];
 
 const bgImageClass = document.getElementById("bgImge");
 
-console.log(chosenImage);
+// console.log(chosenImage);
 
 //자바스크립트에서 이미지를 생성하여 html로~ <img>
 const bgImage = document.createElement("img");

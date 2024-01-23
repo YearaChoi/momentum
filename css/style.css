@@ -123,6 +123,22 @@ input::placeholder {
   transform: translate(-50%, 0%);
   font-size: 25px;
   font-weight: bold;
+
+  width: 300px;
+  max-height: 170px;
+  overflow-y: scroll;
+
+  border: 1px solid (255, 255, 255, 0.5);
+  border-radius: 28px;
+  background-color: rgba(255, 255, 255, 0.25);
+
+  text-align: center;
+  list-style: none;
+  padding-left: 0;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
 
 #todo-list button {
